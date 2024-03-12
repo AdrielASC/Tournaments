@@ -1,0 +1,84 @@
+/* Reset dos estilos */
+body {
+  margin: 0px;
+  font-family: "DM Sans", Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-family: "Inter", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.discord-img {
+  display: flex;
+  gap: 4px;
+}
+
+.discord-icon {
+  position: relative;
+  top: -3px;
+}
+
+.btn-start {
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: linear-gradient(280deg, #6600d4, #4221e3, #005fff);
+}
+
+/* Hero Card */
+
+.hero-display h1 {
+}
