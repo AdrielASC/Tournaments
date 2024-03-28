@@ -101,7 +101,7 @@
       />
 
       <section class="features-section container">
-        <div class="features-introduction">
+        <div class="sections-introduction">
           <h1 class="h1-style-1">Power your play!</h1>
           <p class="p-style-1">
             Discover cutting-edge features designed for gamers, organizers, and
@@ -124,7 +124,9 @@
               >Create your own tournaments<img src="/chevron-right.svg" alt=""
             /></a>
           </div>
-          <img class="tournaments-img" src="/Tournaments.png" alt="" />
+          <div class="tournaments-img">
+            <!-- <img src="/Tournaments.png" alt="" /> -->
+          </div>
         </div>
 
         <div class="rewards-ethical-divs">
@@ -175,14 +177,118 @@
         </div>
       </section>
 
-      <section class="featured-tournaments-section">
-        <div>
-          <p>AAAAAAAAAAAAA</p>
+      <section class="featured-tournaments-section container">
+        <div class="sections-introduction">
+          <h1 class="h1-style-1">Featured Tournaments</h1>
+          <p class="p-style-1">
+            Join the fray in your favorite game and claim glory!
+          </p>
+          <a class="btn-general">All tournaments</a>
+        </div>
+
+        <div class="tournament-cards">
+          <div class="tournament-card">
+            <a class="valorant-card" href="#">
+              <span class="date span-style-1" href="#"
+                ><div class="date-div">
+                  <span class="date-content">Aug 12 – Aug 29</span>
+                </div>
+                2024</span
+              >
+              <div>
+                <h1 class="h1-style-3">Valorant Victory Rush</h1>
+                <p class="p-style-1">
+                  Dominate the Arena for a $50K Prize Pool!
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="tournament-card">
+            <a class="cod-card" href="#">
+              <span class="date span-style-1" href="#"
+                ><div class="date-div">
+                  <span class="date-content">Jul 20 – Aug 10</span>
+                </div>
+                2024</span
+              >
+              <div>
+                <h1 class="h1-style-3">Call of Duty: Combat Challenge</h1>
+                <p class="p-style-1">
+                  Deploy and Conquer for $30K in Cash & Gear!
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="tournament-card">
+            <a class="apex-card" href="#">
+              <span class="date span-style-1" href="#"
+                ><div class="date-div">
+                  <span class="date-content">Sep 5 – Sep 25</span>
+                </div>
+                2024</span
+              >
+              <div>
+                <h1 class="h1-style-3">
+                  Apex Legends: <br />
+                  Champions Quest
+                </h1>
+                <p class="p-style-1">
+                  Outlast the Legends to Win $20K + Exclusive Items!
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ranking-bg">
+        <div class= "container">
+        <div class="ranking-content">
+          <h1 class="h1-style-4">Champions of the Arena</h1>
+          <p>Meet the elite players dominating the game</p>
+        </div>
+
+        <div class="table-div">
+          <table class="table-content">
+            <thead>
+            <tr>
+              <th>Rank <img src="/chevron-selector-vertical.svg"></th>
+              <th>Leaders name</th>
+              <th>Win Rate <img src="/chevron-selector-vertical.svg"></th>
+              <th>Tournament Wins <img src="/chevron-down.svg"></th>
+              <th>Top 3 Finishes <img src="/chevron-selector-vertical.svg"></th>
+              <th>Top 8 Finishes <img src="/chevron-selector-vertical.svg"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Imagem</td>
+              <td><img src="" alt="Foto de perfil">PhantomBlade</td>
+              <td>89%</td>
+              <td>11</td>
+              <td>7</td>
+              <td>0</td>
+            </tr>
+
+            <tr>
+              <td>Imagem</td>
+              <td><img src="" alt="Foto de perfil">RavenYeager</td>
+              <td>88%</td>
+              <td>2</td>
+              <td>7</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+
+        </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer"></footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

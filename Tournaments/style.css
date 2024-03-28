@@ -244,6 +244,7 @@ img {
   grid-column: span 2;
   display: flex;
   gap: 24px;
+  z-index: 5;
 }
 
 .card1,
@@ -319,7 +320,8 @@ img {
   justify-content: center;
   align-items: center;
   background-color: #000;
-  box-shadow: 100px -200px 200px #000;
+  box-shadow: 0px -300px 7px 0px rgba(0, 0, 0, 0.8),
+    0px -200px 7px 0px rgba(0, 0, 0, 0.9), 0px -100px 7px 0px rgba(0, 0, 0, 1);
 }
 
 .title-logos {
@@ -351,35 +353,13 @@ img {
 
 /* Features */
 
-.features-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 96px;
-}
-
-.features-introduction {
-  grid-column: 1 / 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.features-introduction h1 {
-  grid-column: 1;
-}
-
-.features-introduction p {
-  grid-column: 1 / 3;
-  margin-top: 8px;
-}
-
 .features-grid {
   grid-column: 1 / 3;
   display: flex;
   gap: 32px;
-  padding: 32px 0px 32px 32px;
   border: 2px solid #484849;
   border-radius: 24px;
+  align-items: flex-end;
 }
 
 .creation-div {
@@ -387,6 +367,7 @@ img {
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  padding: 32px;
 }
 
 .creation-div h1 {
@@ -409,9 +390,18 @@ img {
 }
 
 .tournaments-img {
-  width: 680px;
-  height: 420px;
-  object-position: right top;
+  background: url(/Tournaments.png) no-repeat;
+  border: 1px solid #d0d5dd;
+  background-size: 912px auto;
+  border-radius: 24px 0px 24px 0px;
+  width: 100%;
+  height: 400px;
+}
+
+.tournaments-img img {
+  position: relative;
+  left: 50px;
+  top: 90px;
 }
 
 .rewards-ethical-divs,
@@ -505,6 +495,147 @@ img {
   margin-bottom: 32px;
 }
 
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 96px;
+  background: #000;
+  box-shadow: 0px -100px 7px 0px rgba(0, 0, 0, 1);
+}
+
+/* Featured Tournaments*/
+
+.featured-tournaments-section {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  background: url("/blur-bg.svg") no-repeat;
+  box-shadow: inset 0px 100px 30px -8px rgba(0, 0, 0, 0.8);
+}
+
+.tournament-cards {
+  grid-row: 2;
+  grid-column: span 2;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tournament-card {
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 1),
+    rgba(72, 72, 73, 1) 35%
+  );
+  border-radius: 26px;
+  padding: 1.5px;
+}
+
+.valorant-card,
+.cod-card,
+.apex-card {
+  width: 384px;
+  height: 505px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0px -170px 60px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 24px;
+}
+
+.date-div {
+  border: 1.5px solid #37393a;
+  border-radius: 30px;
+  padding: 2px 8px;
+}
+
+.date {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-self: start;
+  padding: 4px 10px 4px 4px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid #37393a;
+  border-radius: 30px;
+  position: relative;
+}
+
+.date-content::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(to right bottom, #484849, #afafaf, #ededed);
+  align-self: center;
+  border-radius: 50%;
+  margin-right: 6px;
+  border: 3px solid #37393b;
+}
+
+.valorant-card {
+  background: url("/Background-imgs/valorant-bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.cod-card {
+  background: url("/Background-imgs/cod-bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.apex-card {
+  background: url("/Background-imgs/apex-bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+/* Ranking */
+
+/* .ranking-bg {
+  margin-top: 96px;
+  background: url("./public/Background-imgs/table-bg.png");
+  height: 1226px;
+}
+
+.ranking-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.table-div {
+  display: grid;
+  margin-top: 84px;
+}
+
+.table-content {
+  border-collapse: collapse;
+}
+
+.table-content thead tr {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.table-content tr {
+  background: linear-gradient(170deg, #000, #333);
+} */
+
+/* Footer */
+
+/* .footer {
+  margin-bottom: 600px;
+} */
+
+/* Geral */
+
 .btn-general {
   grid-column: 2;
   grid-row: 1;
@@ -515,6 +646,21 @@ img {
   background: #1a1a1d;
 }
 
+.sections-introduction {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sections-introduction h1 {
+  grid-column: 1;
+}
+
+.sections-introduction p {
+  grid-column: 1 / 3;
+  margin-top: 8px;
+}
+
 /* Estilização Separar */
 
 .p-style-1 {
@@ -522,6 +668,19 @@ img {
   font-size: 20px;
   color: #d0d5dd;
   line-height: 30px;
+}
+
+.p-style-2 {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.span-style-1 {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .h1-style-1 {
@@ -536,8 +695,16 @@ img {
   font-weight: 600;
 }
 
-/* Featured Tournaments*/
+.h1-style-3 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
 
-.featured-tournaments-section {
-  margin-top: 500px;
+.h1-style-4 {
+  font-family: "Clash Display", sans-serif;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 600;
 }
