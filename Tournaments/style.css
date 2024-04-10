@@ -106,16 +106,6 @@ img {
   top: -3px;
 }
 
-.btn-start {
-  border-radius: 30px;
-  padding: 12px 20px;
-  background: linear-gradient(280deg, #6600d4, #4221e3, #005fff);
-}
-
-.btn-start:hover {
-  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
-}
-
 /* Hero Card */
 
 .btn-eyebrow {
@@ -600,7 +590,8 @@ img {
 .ranking-bg {
   margin-top: 96px;
   background: url("/Background-imgs/table-bg.png");
-  height: 1226px;
+  background-size: cover;
+  background-position: center center;
 }
 
 .ranking-content {
@@ -672,10 +663,145 @@ img {
   border-radius: 50%;
 }
 
+/* News */
+
+.news-bg {
+  margin-top: 96px;
+  background: url("/news-bg.svg");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0px -170px 60px 0px rgba(0, 0, 0, 0.6);
+}
+
+.news {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.news img {
+  border-radius: 16px;
+}
+
+.news-content {
+  margin-top: 24px;
+  display: grid;
+  gap: 8px;
+  position: relative;
+}
+
+.news-content h1 {
+  max-width: 20ch;
+}
+
+.news-content h1::after {
+  content: url("/arrow-up-right.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Start Your Journer */
+
+.start-journey-bg {
+  margin: 96px auto;
+  background: linear-gradient(to bottom, #000, #0a021f);
+}
+
+.start-journey-content {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  background: url("/start-journey.png") no-repeat;
+  background-size: 100% auto;
+  border-radius: 24px;
+  box-shadow: 750px 0px 50px 0px rgba(0, 0, 0, 0.8) inset,
+    300px 0px 50px 0px rgba(0, 0, 0, 1) inset,
+    550px 0px 50px 0px rgba(0, 0, 0, 0.7) inset;
+  position: relative;
+}
+
+.start-journey-content::before {
+  content: "";
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 1),
+    rgba(72, 72, 73, 1) 35%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -15;
+  margin: -1.75px;
+  border-radius: 10px;
+}
+
+.start-journey-content p {
+  max-width: 46ch;
+  margin: 20px 0 32px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
 /* Footer */
 
-/* .footer {
-  margin-bottom: 600px;
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.footer .p-style-1 {
+  margin-top: 12px;
+  margin-bottom: 64px;
+  text-align: center;
+  max-width: 54ch;
+}
+
+.footer-info {
+  display: flex;
+  gap: 438px;
+  position: relative;
+}
+
+.footer-info::before {
+  content: "";
+  height: 2px;
+  width: 1216px;
+  background: #1e1e1e;
+  position: absolute;
+  bottom: 50px;
+  left: -30px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-nav a {
+  position: relative;
+}
+
+.footer-nav a::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
 }
 
 /* Geral */
@@ -688,6 +814,24 @@ img {
   gap: 8px;
   padding: 12px 20px;
   background: #1a1a1d;
+}
+
+.btn-start {
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: linear-gradient(280deg, #6600d4, #4221e3, #005fff);
+}
+
+.btn-white {
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: #fff;
+  color: #000;
+}
+
+.btn-start:hover,
+.btn-white:hover {
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .sections-introduction {
@@ -720,6 +864,17 @@ img {
   font-size: 20px;
   color: #fff;
   line-height: 30px;
+}
+
+.p-style-3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.p-style-4 {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .span-style-1 {
