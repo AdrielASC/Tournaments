@@ -1,0 +1,40 @@
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 64px;
+  padding-bottom: 60px;
+  /* verificar padding ^^ */
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  box-shadow: 0px -300px 7px 0px rgba(0, 0, 0, 0.8),
+    0px -200px 7px 0px rgba(0, 0, 0, 0.9), 0px -100px 7px 0px rgba(0, 0, 0, 1);
+}
+
+.title-logos {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.logos {
+  display: flex;
+  gap: 67.19px;
+  position: relative;
+}
+
+.logos::after {
+  content: "";
+  height: 2px;
+  width: 1216px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 255, 255, 1),
+    rgba(255, 0, 0, 0)
+  );
+  position: absolute;
+  top: 104px;
+}

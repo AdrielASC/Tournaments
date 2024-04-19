@@ -1,0 +1,50 @@
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.header-menu a {
+  padding: 16px 0px;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background: linear-gradient(280deg, #6600d4, #4221e3, #005fff);
+  position: absolute;
+  top: 40px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+.discord-img {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+}
+
+.discord-icon {
+  position: relative;
+  top: -3px;
+}

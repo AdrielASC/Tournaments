@@ -1,0 +1,88 @@
+.featured-tournaments-section {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  background: url("/blur-bg.svg") no-repeat;
+  box-shadow: inset 0px 100px 30px -8px rgba(0, 0, 0, 0.8);
+}
+
+.tournament-cards {
+  grid-row: 2;
+  grid-column: span 2;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tournament-card {
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 1),
+    rgba(72, 72, 73, 1) 35%
+  );
+  border-radius: 26px;
+  padding: 1.5px;
+}
+
+.valorant-card,
+.cod-card,
+.apex-card {
+  width: 384px;
+  height: 505px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0px -170px 60px 0px rgba(0, 0, 0, 0.9);
+  border-radius: 24px;
+}
+
+.date-div {
+  border: 1.5px solid #37393a;
+  border-radius: 30px;
+  padding: 2px 8px;
+}
+
+.date {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-self: start;
+  padding: 4px 10px 4px 4px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid #37393a;
+  border-radius: 30px;
+  position: relative;
+}
+
+.date-content::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(to right bottom, #484849, #afafaf, #ededed);
+  align-self: center;
+  border-radius: 50%;
+  margin-right: 6px;
+  border: 3px solid #37393b;
+}
+
+.valorant-card {
+  background: url("/Background-imgs/valorant-bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.cod-card {
+  background: url("/Background-imgs/cod-bg.png") no-repeat;
+  background-size: 100% auto;
+}
+
+.apex-card {
+  background: url("/Background-imgs/apex-bg.png") no-repeat;
+  background-size: 100% auto;
+}

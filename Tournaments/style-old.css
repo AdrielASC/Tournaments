@@ -39,20 +39,6 @@ img {
   height: auto;
   display: block;
 }
-
-.raio {
-  position: absolute;
-  z-index: -100;
-  top: -360px;
-  left: 420px;
-}
-
-.raio-features {
-  position: absolute;
-  z-index: -99;
-  width: 2032px;
-}
-
 /* Header */
 
 .container {

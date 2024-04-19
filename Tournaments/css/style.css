@@ -1,0 +1,26 @@
+@import url("./global/global.css");
+@import url("./global/header.css");
+@import url("./global/footer.css");
+@import url("./utilities/typography.css");
+@import url("./utilities/reusable.css");
+
+/* Hero Card */
+@import url("./main-content/hero-card.css");
+
+/* Partners */
+@import url("./main-content/partners.css");
+
+/* Features */
+@import url("./main-content/features.css");
+
+/* Featured Tournaments*/
+@import url("./main-content/featured-tournaments.css");
+
+/* Ranking */
+@import url("./main-content/ranking.css");
+
+/* News */
+@import url("./main-content/news.css");
+
+/* Start Your Journey */
+@import url("./main-content/start-journey.css");

@@ -1,0 +1,54 @@
+/* Reset dos estilos */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "DM Sans", Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  display: flex;
+  color: inherit;
+  font-family: "Inter", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.raio {
+  position: absolute;
+  z-index: -100;
+  top: -360px;
+  left: 420px;
+}
+
+.raio-features {
+  position: absolute;
+  z-index: -99;
+  width: 2032px;
+}

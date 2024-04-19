@@ -1,0 +1,44 @@
+.start-journey-bg {
+  margin: 96px auto;
+  background: linear-gradient(to bottom, #000, #0a021f);
+}
+
+.start-journey-content {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  background: url("/start-journey.png") no-repeat;
+  background-size: 100% auto;
+  border-radius: 24px;
+  box-shadow: 750px 0px 50px 0px rgba(0, 0, 0, 0.8) inset,
+    300px 0px 50px 0px rgba(0, 0, 0, 1) inset,
+    550px 0px 50px 0px rgba(0, 0, 0, 0.7) inset;
+  position: relative;
+}
+
+.start-journey-content::before {
+  content: "";
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 1),
+    rgba(72, 72, 73, 1) 35%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -15;
+  margin: -1.75px;
+  border-radius: 10px;
+}
+
+.start-journey-content p {
+  max-width: 46ch;
+  margin: 20px 0 32px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
