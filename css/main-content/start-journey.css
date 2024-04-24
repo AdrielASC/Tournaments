@@ -1,5 +1,5 @@
 .start-journey-bg {
-  margin: 96px auto;
+  padding: 96px;
   background: linear-gradient(to bottom, #000, #0a021f);
 }
 
@@ -28,7 +28,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: -15;
+  z-index: -1;
   margin: -1.75px;
   border-radius: 10px;
 }
